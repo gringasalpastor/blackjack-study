@@ -1,0 +1,22 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<gui name="BlackjackStudy" version="1">
+	<ToolBar name="mainToolBar" >
+		<text>Main Toolbar</text>
+		<Action name="new_training_session" />
+		<Action name="load_training_session" />
+		<Action name="save_training_session" />
+	</ToolBar>
+
+	<MenuBar>
+		<Menu name="settings" >
+			<Action name="select_deck"/>
+		</Menu>
+		<Menu name="file" >
+			<Action name="new_training_session" />
+			<Action name="load_training_session" />
+			<Action name="save_training_session" />
+		</Menu>
+
+	</MenuBar>
+	
+</gui>

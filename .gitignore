@@ -1,0 +1,9 @@
+#ignore backup files
+*~
+# Ignore objects files
+*.o
+# Ignore bulid directory
+build/*
+# Ignore kdevelop files
+.kdev4/*
+*.kdev4

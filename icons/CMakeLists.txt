@@ -1,0 +1,1 @@
+ecm_install_icons(ICONS 128-apps-blackjack-study.png DESTINATION ${KDE_INSTALL_ICONDIR} THEME hicolor )

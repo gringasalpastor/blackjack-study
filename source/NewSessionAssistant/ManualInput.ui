@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManualInput</class>
+ <widget class="QWidget" name="ManualInput">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>565</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="numberOfDecksLabel">
+       <property name="text">
+        <string>Decks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="numberOfDecksIntSpinBox">
+       <property name="suffix">
+        <string comment="Decks"/>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>8</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="dealerStandsOnSoft17Label">
+       <property name="text">
+        <string>Stand on Soft 17</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="dealerStandsOnSoft17CheckBox"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="playerCanDoubleOnLabel">
+       <property name="text">
+        <string>Double on</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="playerCanDoubleOnComboBox">
+       <item>
+        <property name="text">
+         <string>Any 2 Cards</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9, 10, or 11</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10 or 11</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="playerCanDoubleAfterSplitsLabel">
+       <property name="text">
+        <string>Double After Split</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="playerCanDoubleAfterSplitsCheckBox">
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="dealerPeeksUSStyleLabel">
+       <property name="text">
+        <string>Dealer Peeks</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="dealerPeeksUSStyleCheckBox">
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

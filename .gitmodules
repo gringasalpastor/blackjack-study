@@ -1,0 +1,3 @@
+[submodule "submodule/lskat"]
+	path = submodule/lskat
+	url = git@github.com:KDE/lskat.git

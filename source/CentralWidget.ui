@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>central_widget</class>
+ <widget class="QWidget" name="central_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="HandDisplay" name="Dealers_hand_display" native="true"/>
+         </item>
+         <item>
+          <widget class="HandDisplay" name="Players_hand_display" native="true"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="Status">
+         <property name="text">
+          <string>Status</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="Hit">
+           <property name="text">
+            <string>Hit</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Stand">
+           <property name="text">
+            <string>Stand</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Double">
+           <property name="text">
+            <string>Double</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Split">
+           <property name="text">
+            <string>Split</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="SideBar" name="side_bar" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QPushButton</class>
+   <header>QPushButton</header>
+  </customwidget>
+  <customwidget>
+   <class>HandDisplay</class>
+   <extends>QWidget</extends>
+   <header>HandDisplay.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SideBar</class>
+   <extends>QWidget</extends>
+   <header>SideBar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
